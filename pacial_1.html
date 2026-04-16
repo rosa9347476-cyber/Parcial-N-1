@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Entidades - S.I.A.F</title>
+    <style>
+        /* Reset básico */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #e9ecef;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        /* Tarjeta contenedora */
+        .card {
+            background-color: white;
+            width: 500px;
+            max-width: 100%;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+
+        /* Encabezado */
+        .header {
+            background-color: #0055aa;
+            color: white;
+            padding: 12px 20px;
+            font-size: 1.3rem;
+            font-weight: bold;
+        }
+
+        /* Cuerpo */
+        .body {
+            padding: 20px;
+        }
+
+        /* Subtítulo */
+        .subtitulo {
+            font-weight: bold;
+            font-size: 0.9rem;
+            margin-bottom: 15px;
+            color: #333;
+            border-bottom: 1px solid #ccc;
+            padding-bottom: 5px;
+        }
+
+        /* Lista de entidades */
+        .lista {
+            margin-bottom: 20px;
+        }
+
+        .item {
+            padding: 6px 0;
+            font-size: 0.9rem;
+            border-bottom: 1px dotted #eee;
+        }
+
+        .codigo {
+            font-weight: bold;
+            color: #0055aa;
+            display: inline-block;
+            width: 45px;
+        }
+
+        .nombre {
+            color: #333;
+        }
+
+        /* Botón Salir */
+        .boton-salir {
+            background-color: #dc3545;
+            color: white;
+            border: none;
+            padding: 8px 20px;
+            border-radius: 4px;
+            font-size: 0.9rem;
+            cursor: pointer;
+            transition: 0.2s;
+            display: inline-block;
+        }
+
+        .boton-salir:hover {
+            background-color: #c82333;
+        }
+
+        /* Pie para alinear el botón */
+        .footer {
+            margin-top: 20px;
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <div class="header">
+            Entidades
+        </div>
+        <div class="body">
+            <div class="subtitulo">INSTALACION ENTIDAD</div>
+            <div class="lista">
+                <div class="item"><span class="codigo">0006</span> <span class="nombre">Vicepresidencia del Estado Plurinacional</span></div>
+                <div class="item"><span class="codigo">0010</span> <span class="nombre">Ministerio de Relaciones Exteriores</span></div>
+                <div class="item"><span class="codigo">0015</span> <span class="nombre">Ministerio de Gobierno</span></div>
+                <div class="item"><span class="codigo">0016</span> <span class="nombre">Ministerio de Educación</span></div>
+                <div class="item"><span class="codigo">0020</span> <span class="nombre">Ministerio de Defensa</span></div>
+                <div class="item"><span class="codigo">0025</span> <span class="nombre">Ministerio de la Presidencia</span></div>
+                <div class="item"><span class="codigo">0030</span> <span class="nombre">Ministerio de Justicia</span></div>
+            </div>
+            <div class="footer">
+                <button class="boton-salir" onclick="alert('Saliendo...');">Salir</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
